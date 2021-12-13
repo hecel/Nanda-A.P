@@ -1,0 +1,11 @@
+this bot can:
+
+owner: eval, reload.
+
+moderator: kick, ban, warn, unwarn, mute, unmute, nuke, setnick, slowmode, lock, unlock, antijoin.
+
+game: gay, putin, wanted, rip, yt-t, ship, akinator, hangman.
+
+core: say, ping, avatar, userinfo, memberinfo, serverinfo, sy, meme, covid, snipe, weather, translate.
+
+giveaway: gstart, gend, gedit, gdelete, greroll.

@@ -1,0 +1,63 @@
+new Menu(message.channel, message.author.id, [
+    {
+      name: "prefixPage",
+      content: embed1,
+      reactions: {
+        "?": "stop",
+        "?": "next"      
+      }
+    },
+    {
+      name: "developerPage",
+      content: embed2,
+      reactions: {
+        "?": "stop",
+        "?": "previous",
+        "?": "next"
+      }
+    },
+    {
+      name: "corePage",
+      content: embed3,
+      reactions: {
+        "?": "stop",
+        "?": "previous",
+        "?": "next"
+      }
+    },
+    {
+      name: "gamePage",
+      content: embed4,
+      reactions: {
+        "?": "stop",
+        "?": "previous",
+        "?": "next"
+      }
+    },
+    {
+      name: "moderatorPage",
+      content: embed5,
+      reactions: {
+        "?": "stop",
+        "?": "previous",
+        "?": "next"
+      }
+    },
+    {
+      name: "giveawayPage",
+      content: embed6,
+      reactions: {
+        "?": "stop",
+        "?": "previous",
+        "?": "next"
+      }
+    },
+    {
+      name: "infoPage",
+      content: embed67,
+      reactions: {
+        "?": "stop",
+        "?": "previous"
+      }
+    }
+  ]);

@@ -1,0 +1,33 @@
+const randomstring = require("randomstring");
+let config = require("../../botconfig/config.json");
+var start;
+
+module.exports = {
+  name: "nitro",
+  aliases: ["gen"],
+  run: async (bot, message, args) => {
+    const owner = config.owner;
+    if (!owner.includes(message.author.id)) return message.channel.send("You Are Not My Developper.").then((m) => {
+        m.delete({ timeout: 4000 });
+    });
+
+    let query = args[1];
+    if(!query) return message.channel.send("Please specify a query, Example: start/stop");
+
+    if(query === "start") {
+        const st = await message.channel.send("Running the script...");
+        start = setInterval(() => {
+            message.channel.send("https://discord.gift/" + randomstring.generate(16));
+        }, 6000);
+        st.edit("Sucessfully running the script");
+    }
+    if(query === "stop") {
+        const st = await message.channel.send("Stoping the script...");
+        clearInterval(start);
+        st.edit("Sucessfully stoping the script");
+    }
+    if(query === "gen") {
+        message.channel.send("https://discord.gift/" + randomstring.generate(16));
+    }
+  }
+}

@@ -1,0 +1,30 @@
+const { Client, Message, MessageEmbed } = require("discord.js");
+//const premium = require("../../server/premium.json");
+
+module.exports = {
+    name: "help2",
+    aliases: ["h2"],
+    description: "see a list command for bot",
+    /**
+     * @param {Client} bot
+     * @param {Message} message
+     * @param {String[]} args
+     */
+    run: async(bot, message, args) => {
+        // let server = premium.serverID;
+        // if(!server.includes(message.guild.id)) return message.channel.send("sorry this command is premium, you can buy it with owocash and send proof photos to wolvies#8620 along with the server id!");
+
+        let command = bot.commands.array();
+
+        const embed = new MessageEmbed()
+        .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
+        .setTitle(`${bot.user.username} help commands`)
+        .setColor("GOLD");
+
+        command.map((cmd) => {
+            embed.addField(`**${message.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`, `${cmd.description}`, true);
+            embed.setTimestamp();
+        });
+        message.channel.send(embed);
+    }
+}

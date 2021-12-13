@@ -1,0 +1,13 @@
+{
+    "TOKEN": "ODc5ODE4ODExODQ1NTMzNzU2.YSVRHg.3p1ZiqXkbWRrB-DRWEhZisxjKc0",
+    "YT_API": "AIzaSyBlCU4ZbV5qyYgKI_hlbixGpzKfmr0E71U",
+    "prefix": "N!",
+    "PROJECT_DOMAIN": "vip-bot",
+    "owner": ["799600249265192961"],
+    "developer": ["wulvies#8620"],
+    "hostedBy" : true,
+    "everyoneMentions": true,
+    "DEVAULT_VOLUME": 100,
+    "STAY_TIME": 1000,
+    "mongooseConnectionString": "mongodb+srv://wulvies:wulvies123@nanda.zo3ry.mongodb.net/Data"
+}

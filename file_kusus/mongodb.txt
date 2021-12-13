@@ -1,0 +1,5 @@
+mongodb:
+
+user: wulvies
+password: wulvies123
+url: mongodb+srv://wulvies:wulvies123@nanda.zo3ry.mongodb.net/test
